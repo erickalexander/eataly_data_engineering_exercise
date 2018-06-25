@@ -7,6 +7,9 @@ def run(args):
     output_filename = args.output # from dest="output"
 
     # Do stuff
+    for line in open(filename):
+        print(line,end='')
+
 
 def main():
     parser=argparse.ArgumentParser(description="detects top sellers, provided customer receipts files")
